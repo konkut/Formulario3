@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<title>formulario3</title>
+</head>
+<body>
+<form action="mail.php" method="POST">
+	<h2 id="title">Contacto</h2>
+	<p>Nombre:<br> <input type="text" name="name" required=""></p>
+	<p>Correo Electronico:<br> <input type="text" name="email" required=""></p>
+	<p>Pais:<br><input list="country" name="country" required="">
+		<datalist id="country">
+			<option value="Bolivia"></option>
+			<option value="Brasil"></option>
+			<option value="Colombia"></option>
+			<option value="Chile"></option>
+			<option value="Peru"></option>
+			<option value="Paraguay"></option>
+		</datalist></p>
+		<p>Comentario: <br><textarea name="comment" id="" cols="30" rows="10" required></textarea></p>
+		<p class="center"><input type="submit" value="Enviar correo"></p>
+	</form>
+</body>
+</html>
